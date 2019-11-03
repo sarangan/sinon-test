@@ -5,7 +5,7 @@ const assert = require('chai').assert;
 describe('myfunction', function(){
 
     this.afterEach(()=>{
-        sinon.restore()
+        sinon.restore();
     });
     
     it("should call the callback function", function(){
