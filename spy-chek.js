@@ -21,3 +21,9 @@ console.log(setNameSpy.callCount);
 console.log(setNameSpy.firstCall.args);
 
 setNameSpy.restore();
+
+
+let stub = sinon.stub();
+stub("hello  world stub");
+
+console.log(stub.firstCall.args);
